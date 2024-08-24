@@ -3,21 +3,18 @@ import React from 'react'
 import { FaNairaSign } from "react-icons/fa6";
 
 const ProductCard = () => {
-    const price = 1000;
+    const price = 750000
   return (
-    <div className='w-[250px] h-[400px] border'>
-        <div className='relative h-[70%]'>
-            <Image src="/phone.jpg" alt="" fill className=' aspect-auto'/>
-        </div>
+    <div className='w-[48%] h-fit border bg-white'>
+        {/* <div className='relative h-auto'>
+           
+        </div> */}
+         <Image src="/phone.jpg" width={500} height={0} className=' aspect-auto'/>
 
-        <p className='text-3xl'>Samsung S22 ultra </p>
-        <div className='flex text-xl'>
-          <h5>Normal Price:</h5>  
-          <p className='flex items-center gap-1'><FaNairaSign />{price}</p>
-        </div>
-        <div className='flex text-xl'>
-          <h5>Our Price: </h5> 
-          <p className='flex items-center gap-1'><FaNairaSign />{price}</p>
+        <h6 className='text-lg font-extrabold mb-1'>Samsung S22 ultra </h6>
+        <div className='text-xl justify-between'>
+          <span className='font-extrabold flex items-center gap-1 '><FaNairaSign />{price}</span>
+          <span className='flex items-center gap-1 line-through text-gray-700'><FaNairaSign />{price}</span>
         </div>
     </div>
   )

@@ -5,7 +5,7 @@ import { FaNairaSign } from "react-icons/fa6";
 const ProductCard = () => {
     const price = 750000
   return (
-    <div className='w-[48%] h-fit border bg-white'>
+    <div className='w-[48%] h-fit border bg-white mb-2'>
         {/* <div className='relative h-auto'>
            
         </div> */}
@@ -16,6 +16,7 @@ const ProductCard = () => {
           <span className='font-extrabold flex items-center gap-1 '><FaNairaSign />{price}</span>
           <span className='flex items-center gap-1 line-through text-gray-700'><FaNairaSign />{price}</span>
         </div>
+        <button className='text-lg bg-[#00BCD4] text-white border border-[#333333] w-full'>Chat To Buy</button>
     </div>
   )
 }
